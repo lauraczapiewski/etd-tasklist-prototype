@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-xlarge">
+				Get an emergency travel document
+			<span class="heading-secondary">RELEASE 1 PROTOTYPE</span>
+	  	  	</h1>
+	  	  	<hr>
+	  	  	<div class="submenu">
+				<ol class="list list-number">
+					<li><a class="currentpage"  href="intro-howitworks.html">How it works</a></li>
+					<li><a href="intro-howtoapply.html">How to apply</a></li>
+					<li><a href="intro-notbritishcitizen.html">If you're not a British citizen</a></li>
+				</ol>
+			</div>
+			
+			<h2 class="heading-medium">1. How it works</h2>
+			
+			<p>You can apply for an emergency travel document (sometimes called an ‘emergency passport’) if you’re abroad, need to travel and can’t get a passport in time.</p>
+			<p class="panel panel-border-narrow">If you’re in the UK you should <a href="https://www.gov.uk/get-a-passport-urgently" target="_blank">apply for a passport urgently</a></p>
+			
+			<a name="eligibility"></a> 
+			<h2 class="heading-small">Eligibility</h2>
+			
+			<p>You can apply for an emergency travel document if all the following apply:
+		  	<ul class="list-bullet">
+				<li>you’re a <a href="https://www.gov.uk/types-of-british-nationality/british-citizenship" target="_blank">British national</a></li>
+				<li>you’re outside the UK</li>
+				<li>your passport has been lost, stolen, damaged, is full, has recently expired or is with HM Passport Office or a foreign embassy</li>
+				<li>you don’t have time to <a href="https://www.gov.uk/overseas-passports" target="_blank" >renew or replace your passport</a> before you travel</li>
+				<li>you can provide proof of your travel plans, for example booking confirmations (or detailed written travel plans if you can’t book ahead)</li>
+			</ul></p>
+		  	<h2 class="heading-small">What an emergency travel document lets you do</h2>
+		  	<p>You can use an emergency travel document to travel to your destination through a maximum of 5 countries. You can also normally use it to return to where you are now if you live in the country you’re applying from. Your travel plans (countries and dates) will be printed on your emergency travel document. If you change your travel plans once you have your emergency travel document, you’ll need to apply for a new one.</p>
+			<p class="panel panel-border-narrow">You may need a visa to leave the country you’re in or to travel through other countries with your emergency travel document. Check with the embassy or consulate of each country.</p>
+			<p>If your final destination is the UK, border staff will keep your emergency travel document when you arrive. Border staff at a different final destination might also keep the document.</p>
+			
+			<hr>
+			
+			<p><a class="button" href="intro-howtoapply.html" role="button">Next</a></p>
+			
+		</div>
+		<div class="column-one-third">
+			<div class="govuk-taxonomy-sidebar add-title-margin">
+				<h2 class="heading-medium">Passports and emergency travel documents </h2>
+				<p>Includes how to cancel a lost passport, renew a passport and apply for an emergency travel document.</p>
+			
+				<nav role="navigation">
+					<ul class="list list-bullet">
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.1" data-track-label="/passport-application-while-visiting-uk" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Apply for or renew a British passport if you're visiting the UK&quot;}" class="related-link" href="https://www.gov.uk//passport-application-while-visiting-uk">Apply for or renew a British passport if you're visiting the UK</a>
+						</li>
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.2" data-track-label="/report-a-lost-or-stolen-passport" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Cancel a lost or stolen passport&quot;}" class="related-link" href="https://www.gov.uk/report-a-lost-or-stolen-passport">Cancel a lost or stolen passport</a>
+						</li>
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.3" data-track-label="/overseas-passports" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Overseas British passport applications&quot;}" class="related-link" href="https://www.gov.uk//overseas-passports">Overseas British passport applications</a>
+						</li>
+					</ul>
+          		</nav>
+
+			</div>
+		</div>
+	  
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Where are you travelling to?
+      </h1>
+
+  
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Which country or territory is your destination?</label>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+      <p>
+      </p>
+
+
+      <label class="heading-small" for="full-name-f1">Countries you'll transit to reach your destination</label>
+      <p class="form-hint">If you're travelling via any other countries or territories (including stopping at an airport), provide them here. Otherwise leave blank. You don't need to give dates for transit countries.</p>
+      <label class="heading-small" for="full-name-f1">First transit country</label>
+     <p>
+     </p>
+
+<input class="form-control" id="full-name-f1" type="text">
+            
+<p>
+</p>
+
+<div>
+
+      <p><a href="/noTransit">Add another transit country.</a> </p>
+      <div/>
+
+
+<div 
+
+      <form action="/" method="post" class="form">
+
+
+             <h1 class="heading-small">
+        Departure date
+      </h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of departure</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 7 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017">
+            </div>
+
+          </div>
+        </fieldset>
+
+             <h1 class="heading-small">
+        Arrival date if different from above (optional)
+</h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of arrival</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 7 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+        </fieldset>
+
+ 
+
+        <h1 class="heading-small">
+          Do you need to return to Spain?
+        </h1>
+
+  <div class="multiple-choice">
+          <input id="radio-1" name="radio-group" data-target="No" value="No" type="radio">
+          <label for="radio-1">No</label>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="radio-2" name="radio-group" data-target="Yes" value="Yes" type="radio">
+          <label for="radio-2">Yes</label>
+        </div>
+
+        </form>
+
+
+          </fieldset>
+          <fieldset>
+            
+         
+          <p>
+          </p>
+          <p>
+        <a class="button button-start" href="whytravel" role="button">next</a>
+      </p>
+        </div>
+      </fieldset>
+
+  
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				Why do you need an emergency travel document?
+	  	  	</h1>
+	  	  	<hr>
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">Why do you need an emergency travel document?</legend>
+				
+				<div class="multiple-choice">
+				  <input id="radio-1" name="radio-group" data-target="whathappened-lost" value="whathappened-lost" type="radio">
+				  <label for="radio-1">My passport has been lost</label>
+				</div>
+
+				<div class="multiple-choice">
+				  <input id="radio-2" name="radio-group" data-target="whathappened-stolen" value="whathappened-stolen" type="radio">
+				  <label for="radio-2">My passport has been stolen</label>
+				</div>
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-3" name="radio-group" data-target="whathappened-expire" value="whathappened-expire" type="radio">
+				  <label for="radio-3">My passport has expired or is about to expire</label>
+				</div>	
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-4" name="radio-group" data-target="whathappened-full" value="whathappened-full" type="radio">
+				  <label for="radio-4">My passport is full</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-5" name="radio-group" data-target="whathappened-damaged" value="whathappened-damaged" type="radio">
+				  <label for="radio-5">My passport has been defaced or damaged</label>
+				</div>
+		  		  
+		  	    <div class="multiple-choice">
+				  <input id="radio-6" name="radio-group" data-target="whathappened-hm" value="whathappened-hm" type="radio">
+				  <label for="radio-6">My passport is with HM Passport Office</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-7" name="radio-group" data-target="whathappened-embassy" value="whathappened-embassy" type="radio">
+				  <label for="radio-7">My passport is with a foreign embassy for visa processing</label>
+				</div>
+		  		  	
+		  	    <div class="multiple-choice" data-target="whathappened-other-text-div">
+				  <input id="radio-8" name="radio-group" value="whathappened-other"  aria-expanded="true" type="radio">
+				  <label for="radio-8">Other</label>
+				</div>
+	  		  
+	  		  	<div class="panel panel-border-narrow js-hidden" id="whathappened-other-text-div">
+					<label class="form-label" for="whathappened-other-text">If 'Other' please specify </label>
+					<input class="form-control" id="whathappened-other-text" name="whathappened-other-text" type="text">
+            	</div>
+
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><hr><p><a class="button" href="country.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				How are you applying for an emergency travel document?
+	  	  	</h1>
+	  	  	<hr>
+		
+			<div class="form-group">
+			  <fieldset>
+				<legend class="visually-hidden">How are you applying for an emergency travel document?</legend>
+						<p>If the person that needs the document is under 16, they’ll need to find someone over 16 who can apply on their behalf.</p>
+						<p>For the person who needs the document, an appointment may be required to complete the application.</p>
+					<div class="multiple-choice">
+					  <input id="radio-1" name="radio-group" aria-controls="howapplying-myself" data-target="howapplying-myself" value="I am applying for myself" type="radio">
+					  <label for="radio-1">I am applying for myself</label>
+					</div>
+					
+					<div class="multiple-choice">
+					  <input id="radio-2" name="radio-group" value="I am applying on behalf of someone else" aria-controls="howapplying-else" data-target="howapplying-else" aria-expanded="false" type="radio">
+						<label for="radio-2">I am applying on behalf of someone else who is <strong>under</strong> 16</label>
+					</div>
+					
+					<div class="multiple-choice">
+					  <input id="radio-3" name="radio-group" value="I am applying on behalf of someone else" aria-controls="howapplying-else" data-target="howapplying-else" aria-expanded="false" type="radio">
+						<label for="radio-3">I am applying on behalf of someone else who is <strong>over</strong> 16</label>
+					</div>
+					
+					
+			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><hr><p><a class="button" href="britishcitizen.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

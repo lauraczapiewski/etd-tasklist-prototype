@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <h1 class="heading-large">
+        Emergency travel documents
+      </h1>
+
+      <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span> Provide application details
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="booked" aria-describedby="application">
+                Enter your journey details
+              </a>
+              
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="passport">
+                Tell us what happened to your passport
+              </a>
+                        </li>
+
+              <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="details">
+                Enter your details
+              </a>
+         
+            </li>
+              <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="pay">
+                Pay for your emergency travel document
+              </a>
+         </li>
+                 <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="read-declaration">
+                Read terms and conditions and confirm application details
+              </a>
+              
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Add supporting documents
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="photo">
+                Add photo
+              </a>
+              
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="travel">
+                Add travel tickets or booking confirmation (if you have travel booked)
+              </a>
+              
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="consulate" aria-describedby="police">
+                Add police report (if your passport is lost or stolen and you have reported it to the police)
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="residency">
+                Add proof of residency (if your final destination is outside of the EU)
+              </a>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="consent">
+                Add consent letter (if both parents cannot attend an appointment with an applicant under 16)
+              </a>
+             
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">3. </span> Collect your emergency travel document
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="consent">
+                Find out when and where to collect your emergency travel document
+              </a>
+            </li>
+             <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="collect">
+                Find out when and where to collect your emergency travel document
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

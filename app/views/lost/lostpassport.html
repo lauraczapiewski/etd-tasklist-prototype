@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          What happened to your passport?
+        </h3>
+        <h1 class="heading-small">
+        How was your passport lost
+        </h1>
+
+      
+            <div class="form-group">
+        <fieldset>
+        
+        <legend class="visually-hidden">Why do you need an emergency travel document?</legend>
+        
+        <div class="multiple-choice">
+          <input id="radio-1" name="radio-group" data-target="lost-socialising" value="lost-socialising" type="radio">
+          <label for="radio-1">While socialising</label>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="radio-2" name="radio-group" data-target="whathappened-stolen" value="whathappened-stolen" type="radio">
+          <label for="radio-2">At home</label>
+        </div>
+
+            <div class="multiple-choice">
+          <input id="radio-3" name="radio-group" data-target="whathappened-expire" value="whathappened-expire" type="radio">
+          <label for="radio-3">While moving house</label>
+        </div>  
+
+            <div class="multiple-choice">
+          <input id="radio-4" name="radio-group" data-target="whathappened-full" value="whathappened-full" type="radio">
+          <label for="radio-4">While travelling</label>
+        </div>
+            
+            <div class="multiple-choice">
+          <input id="radio-5" name="radio-group" data-target="whathappened-damaged" value="whathappened-damaged" type="radio">
+          <label for="radio-5">I don't know</label>
+        </div>
+            
+   
+              
+            <div class="multiple-choice" data-target="whathappened-other-text-div">
+          <input id="radio-8" name="radio-group" value="whathappened-other"  aria-expanded="true" type="radio">
+          <label for="radio-8">Another reason</label>
+        </div>
+          
+            <div class="panel panel-border-narrow js-hidden" id="whathappened-other-text-div">
+          <label class="form-label" for="whathappened-other-text">If 'Other' please specify </label>
+          <input class="form-control" id="whathappened-other-text" name="whathappened-other-text" type="text">
+              </div>
+
+          </fieldset>
+
+           
+
+</div>
+<div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
+            </div>
+           </div>
+
+          </fieldset>
+
+      </form>
+
+<fieldset>
+
+          <h1 class="heading-small">
+        Where was your passport lost or stolen?
+      </h1>
+      <p class="form-hint">If you're unsure tell us roughly where you think you last had it</p>
+ 
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1">City or town</label> <div> </div>
+
+<input class="form-control" id="full-name-f1" type="text">
+
+<div>
+</div>
+<p>
+</p>
+
+
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1">Country</label> <div> </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+<div>
+</div>
+</form>
+
+<p>
+</p>
+
+<h1 class="heading-small">
+        Date 
+</h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 24 7 2016 </p>
+            <p class="form-hint">If you're unsure tell us roughly when you think you last had it </p>
+            
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+        </fieldset>
+
+
+        <a class="button button-start" href="police" role="button">next</a>
+
+</p>
+      </p>
+       
+
+
+
+
+
+    
+</main>
+            
+
+{% endblock %}
