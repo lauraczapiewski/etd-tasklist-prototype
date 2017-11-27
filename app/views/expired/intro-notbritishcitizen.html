@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-xlarge">
+				Get an emergency travel document
+			<span class="heading-secondary">RELEASE 1 PROTOTYPE</span>
+	  	  	</h1>
+	  	  	<hr>
+	  	  	<div class="submenu">
+				<ol class="list list-number">
+					<li><a href="intro-howitworks.html">How it works</a></li>
+					<li><a href="intro-howtoapply.html">How to apply</a></li>
+					<li><a class="currentpage" href="intro-notbritishcitizen.html">If you're not a British citizen</a></li>
+				</ol>
+			</div>
+			
+			<h2 class="heading-medium">3. If you're not a British citizen</h2>
+			
+			<p>If you’re 16 or over and a <a href="https://www.gov.uk/types-of-british-nationality/british-citizenship" target="_blank">British national</a> abroad but not a British citizen, you need to:</p>
+			
+			<p>
+		 	<ol class="list list-number">
+			 	<li>Check if you’re eligible with your nearest <a href="https://www.gov.uk/world/embassies" target="_blank">British embassy, high commission or consulate</a>.</li>
+			    <li>Download and fill in an <a href="https://www.gov.uk/government/publications/application-for-a-united-kingdom-emergency-travel-document--2" target="_blank">application form</a>.</li>
+				<li>Paper application forms should be scanned and emailed to your nearest British embassy, high commission or consulate, along with any supporting documents and photos, otherwise an appointment will be required to submit the application, supporting documents and photos.</li>
+				<li>The relevant British embassy, high commission or consulate will contact you to take payment when the application is submitted by email.</li>
+			</ol>
+			</p>
+			
+			<hr>
+			
+			<p><a class="button" href="intro-howtoapply.html" role="button">Previous</a></p>
+			
+		</div>
+		<div class="column-one-third">
+			<div class="govuk-taxonomy-sidebar add-title-margin">
+				<h2 class="heading-medium">Passports and emergency travel documents </h2>
+				<p>Includes how to cancel a lost passport, renew a passport and apply for an emergency travel document.</p>
+			
+				<nav role="navigation">
+					<ul class="list list-bullet">
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.1" data-track-label="/passport-application-while-visiting-uk" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Apply for or renew a British passport if you're visiting the UK&quot;}" class="related-link" href="https://www.gov.uk//passport-application-while-visiting-uk">Apply for or renew a British passport if you're visiting the UK</a>
+						</li>
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.2" data-track-label="/report-a-lost-or-stolen-passport" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Cancel a lost or stolen passport&quot;}" class="related-link" href="https://www.gov.uk/report-a-lost-or-stolen-passport">Cancel a lost or stolen passport</a>
+						</li>
+						<li>
+						  <a target="_blank" data-track-category="relatedLinkClicked" data-track-action="1.3" data-track-label="/overseas-passports" data-track-options="{&quot;dimension28&quot;:&quot;3&quot;,&quot;dimension29&quot;:&quot;Overseas British passport applications&quot;}" class="related-link" href="https://www.gov.uk//overseas-passports">Overseas British passport applications</a>
+						</li>
+					</ul>
+          		</nav>
+
+			</div>
+		</div>
+		
+	  
+	</div>
+</main>
+{% endblock %}
