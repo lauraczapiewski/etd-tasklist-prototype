@@ -1,0 +1,293 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Check your answers
+{% endblock %}
+
+{% block after_header %}
+  {% include "includes/timeout_modal.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+       Check your answers before sending your application
+     </h1>
+
+      {# <h2 class="heading-medium">
+        Basic eligibility
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Licensable activities
+          </dt>
+          <dd class="cya-answer">
+            <ul class='list-bullet'>
+               {% for activity in data['licensable-activities'] %}
+                  <li>{{ activity }}</li>
+               {% endfor %}
+            </ul>
+          </dd>
+          <dd class="cya-change">
+            <a href="licensable-activities?next=check-your-answers" aria-label="Change licencesable activities">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Existing premises licence
+          </dt>
+          <dd class="cya-answer">
+            {% if data['existing-licence'] == 'no' %}You do not have an existing premises licence.{% endif %}
+            {% if data['existing-licence'] == 'yes' and data['licence-cover'] == 'no' %}Your existing licence does not cover the event.{% endif %}
+          </dd>
+          <dd class="cya-change">
+            <a href="existing-premises-licence?next=check-your-answers" aria-label="Change existing premises licence">Change</a>
+          </dd>
+        </div>
+      </dl> #}
+
+      <h2 class="heading-medium">
+        Local council
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Council
+          </dt>
+          <dd class="cya-answer">
+            {{data['local-council']}}
+          </dd>
+          <dd class="cya-change">
+            <a href="local-council?next=check-your-answers" aria-label="Change local council">Change</a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="heading-medium">
+        Event details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Event start date
+          </dt>
+          <dd class="cya-answer">
+              <!-- {{ data['event-start-day'] }}
+              {{ getMonthWord(data['event-start-month']) }}
+              {{ data['event-start-year'] }} -->
+              {{ data['event-start-date'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-start-date?next=check-your-answers" aria-label="Change event start date">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Event start time
+          </dt>
+          <dd class="cya-answer">
+              {{ data['event-start-hour'] }}:{{ data['event-start-minute'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-start-date?next=check-your-answers" aria-label="Change event start time">Change</a>
+          </dd>
+        </div>
+        {% if data['event-duration'] == 'two-to-seven' %}
+          <!-- <div>
+            <dt class="cya-question">
+              Event end date
+            </dt>
+            <dd class="cya-answer"> -->
+                <!-- {{ data['event-duration-two-days-end-day'] }}
+                {{ getMonthWord(data['event-duration-two-days-end-month']) }}
+                {{ data['event-duration-two-days-end-year'] }} -->
+
+                <!-- {{ data['datepicker_input'] }}
+            </dd>
+            <dd class="cya-change">
+              <a href="event-duration?next=check-your-answers">
+                Change<span class="visually-hidden"> event start date</span>
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Event end time
+            </dt>
+            <dd class="cya-answer">
+              {% if data['event-duration'] == 'one' %}
+                {{ data['event-duration-one-day-end-hour'] }}:{{ data['event-duration-one-day-end-minute'] }}
+              {% elseif data['event-duration'] == 'two-to-seven' %}
+                {{ data['event-duration-two-days-end-hour'] }}:{{ data['event-duration-two-days-end-minute'] }}
+              {% endif %}
+            </dd>
+            <dd class="cya-change">
+              <a href="event-duration?next=check-your-answers">
+                Change<span class="visually-hidden"> event start date</span>
+              </a>
+            </dd>
+          </div> -->
+        {% endif %}
+        <div>
+          <dt class="cya-question">
+            Event duration
+          </dt>
+          <dd class="cya-answer">
+            {% if data['event-duration'] == 'one' %}One day{% endif %}
+            {% if data['event-duration'] == 'two-to-seven' %}Two to seven days{% endif %}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-duration?next=check-your-answers" aria-label="Change event duration">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Type of event
+          </dt>
+          <dd class="cya-answer">
+            {{ data['event-description'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-description?next=check-your-answers" aria-label="Change type of event">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Event costs
+          </dt>
+          <dd class="cya-answer">
+            {% if data['event-selling-tickets'] == 'no' %}None{% endif %}
+            {% if data['event-selling-tickets'] == 'yes' %}
+            £{{ data['tickets-cost'] }}
+            {% endif %}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-description?next=check-your-answers" aria-label="Change event cost">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Premises
+          </dt>
+          <dd class="cya-answer">
+            {{ data['event-address'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="event-postcode?next=check-your-answers" aria-label="Change premises">Change</a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="heading-medium">
+        Applicant details
+      </h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Full name
+          </dt>
+          <dd class="cya-answer">
+            {{ data['applicant-name'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="applicant-details?next=check-your-answers" aria-label="Change full name">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Date of birth
+          </dt>
+          <dd class="cya-answer">
+            {{ data['applicant-dob-day'] }}
+            {{ getMonthWord(data['applicant-dob-month']) }}
+            {{ data['applicant-dob-year'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="applicant-details?next=check-your-answers" aria-label="Change date of birth">Change</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Contact method
+          </dt>
+          <dd class="cya-answer">
+            {% if data['contact-method'] == 'email' %}{{ data['contact-email'] }}{% endif %}
+            {% if data['contact-method'] == 'phone' %}{{ data['contact-phone'] }}{% endif %}
+            {% if data['contact-method'] == 'text-message' %}{{ data['contact-text-message'] }}{% endif %}
+          </dd>
+          <dd class="cya-change">
+            <a href="contact-details?next=check-your-answers" aria-label="Change contact method">Change</a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="heading-medium">
+        Summary
+      </h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Total cost
+          </dt>
+          <dd class="cya-answer">
+            £21
+          </dd>
+          <dd class="cya-change">
+
+          </dd>
+        </div>
+      </dl>
+
+
+
+      <br>
+      <div class="form-group">
+        <a href="declaration" class="button">Continue</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+{% macro getMonthWord(number) %}
+
+  {% set month = '' %}
+
+  {% if number == 1 %}
+    {% set month = 'January' %}
+  {% elseif number == 2 %}
+    {% set month = 'February' %}
+  {% elseif number == 3 %}
+    {% set month = 'March' %}
+  {% elseif number == 4 %}
+    {% set month = 'April' %}
+  {% elseif number == 5 %}
+    {% set month = 'May' %}
+  {% elseif number == 6 %}
+    {% set month = 'June' %}
+  {% elseif number == 7 %}
+    {% set month = 'July' %}
+  {% elseif number == 8 %}
+    {% set month = 'August' %}
+  {% elseif number == 9 %}
+    {% set month = 'September' %}
+  {% elseif number == 10 %}
+    {% set month = 'October' %}
+  {% elseif number == 11 %}
+    {% set month = 'November' %}
+  {% elseif number == 12 %}
+    {% set month = 'December' %}
+  {% endif %}
+
+  {{ month }}
+
+{% endmacro %}

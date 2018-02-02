@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Upload photo
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+        <li><a href="../1start.html">Emergency Travel Document</a></li>
+      <li><a href="../task-list/tasklistsummary1.html">Steps</a></li>
+      <li>Take your photo</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+      Add your photo
+      </h1>
+        
+        <p>If you are using a phone or tablet that can take photos, you can take a photo and add it now.</p>
+        
+        <p>If you have an existing photo, you can add it now. It must be less than 4 months old and meet the <a href="photo1">photo requirements</a>. Your photo may be in your pictures, photos, downloads or desktop folder. Or in an app like iPhoto.</p>
+
+        <p> Select 'choose file' to search for and choose a photo, or if you already have your photo to hand, drag it into the box below. </p>
+        <div class="panel panel-border-wide">
+
+
+
+                <p>We’ll store all photos for up to 30 days in line with our <a href="" class="new-window" target="_blank">privacy policy<span class="visuallyhidden">(Opens in a new window)</span></a>.</p>
+            </div>        
+      
+        </br>
+    
+<form method="POST" enctype="multipart/form-data" action= "photo3" name="etd-test-photo">
+
+
+  <label for="uploading" ></label>
+  <input type="file" name= "Uploading" id=:uploading" />
+
+ <a class="button button-start" href="photo3" role="button">Next  ></a>
+</form>
+
+
+          
+
+      <br/>
+           
+
+        
+
+     
+   
+
+</main>
+
+{% endblock %}

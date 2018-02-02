@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  About your photo
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="../1start.html">Emergency Travel Document</a></li>
+      <li><a href="../task-list/tasklistsummary1.html">Steps</a></li>
+      <li>Check your photo
+    </li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-thirds">
+
+      <h1 class="heading-xlarge">
+      Check your photo
+      </h1>
+        
+      
+        
+       <div class="column-half img">
+                    <img src="https://www.passport.service.gov.uk/public/images/good-passport-photo.jpg" alt="example of a good photo" width="300" height="430">
+                </div>
+           
+        <div class="grid-row">
+    <div class="column-one-thirds">
+        
+         <h2 class="heading-medium">Photo checks</h2>
+      
+ 
+                    <ul class="list list-number">
+                        <li>Is there anything in the background?</li>
+                        <li>Are you facing the camera with your eyes open and visible?</li>
+                         <li>Is the photo clear</li>
+                          <li>Can you see your entire face?</li>
+            
+                    </ul>
+             
+                </div>
+      
+      </div>
+
+       <div class="grid-row">
+
+ <p>We will check your photo to make sure it meets our requirements, but to avoid delaying your application, we advise that before sending it to us, you check your photo using the checklist. </p>  <p>If you are unsure, you can use our <a href=https://www.passport.service.gov.uk/photo-check/upload" >automatic checking service.  </a>
+ 
+ <p>
+
+  If you feel that you have a good reason for your photo not meeting out guidelines, such as a physical impairment or religious reason for wearing headgear, provide your reason below
+</p>
+
+ <form class="form">
+
+      <label class="heading-small" for="full-name-f1"></label>
+      <div>
+      </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+                </div>
+      
+      <div class="grid-row">
+    <div class="column-two-thirds">
+      <br>
+      <p>
+        <a class="button button-start" href="tasklist3" role="button">Submit photo ></a>
+          
+</p>
+            </div>
+<input type="hidden" name="x-csrf-token" value="FL1yeIdc-JOBHoCOHSE77ydXyhLzeLeNecos" />
+
+        <script src="https://www.passport.service.gov.uk/photo/public/javascripts/keepalive.js"></script>
+    </div>
+
+        
+
+     
+   
+
+</main>
+
+{% endblock %}

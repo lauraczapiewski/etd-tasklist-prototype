@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <h1 class="heading-large">
+        Emergency travel documents
+      </h1>
+
+      <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span> Provide application details
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="completed" aria-describedby="eligibility-completed">
+                Enter your journey details
+              </a>
+              <strong class="task-completed" id="eligibility-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="completed" aria-describedby="read-declaration-completed">
+                Tell us what happened to your passport
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+
+              <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="read-declaration-completed">
+                Enter your details
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+              <li class="task-list-item">
+              <a class="task-name" href="completed" aria-describedby="read-declaration-completed">
+                Pay for your emergency travel document
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+                 <li class="task-list-item">
+              <a class="task-name" href="completed" aria-describedby="read-declaration-completed">
+                Read terms and conditions and confirm application details
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Add supporting documents
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="photo1" aria-describedby="company-information-completed">
+                Add photo
+              </a>
+              
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="contact-details-completed">
+                Add travel tickets or booking confirmation 
+              </a>
+              
+            </li>
+        
+
+              
+            </li>
+          </ul>
+        </li>
+        <li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">3. </span> Complete application and collect your emergency travel document
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="consent">
+                Book appointment
+              </a>
+            </li>
+             <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="collect">
+                Bring us your old passport
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

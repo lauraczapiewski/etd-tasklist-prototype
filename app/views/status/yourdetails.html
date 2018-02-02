@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Your details
+      </h1>
+
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Title</label> 
+      <div>
+      </div>
+
+<input class="form-control" id="full-name-f1" type="text">
+
+<p>
+</p>
+
+
+<p>
+
+Provide the details as they appeared on your passport.
+</p>
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">First and middle names</label>
+      <div>
+      </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+      <p>
+      </p>
+
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Last name</label>
+      <div>
+      </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+      <p>
+      </p>
+
+      <h3 class="heading-small">
+          Gender
+
+        </h3>
+
+      
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Gender</legend>
+
+                   
+            <label for="radio-female" class="block-label">
+              <input id="radio-female" type="radio" name="gender" value="Female">
+             
+              Female
+            </label>
+
+            <label for="radio-male" class="block-label">
+              <input id="radio-male" type="radio" name="gender" value="male">
+            
+             Male
+            </label>
+           <p>
+           </p>
+
+</fieldset>
+</div>
+
+
+ <h1 class="heading-small">
+        Date of birth
+</h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">DOB</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 24 7 1981</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+        </fieldset>
+    
+<h1 class="heading-medium">
+        Place of birth on your passport
+      </h1>
+ 
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1">City or town</label> <div> </div>
+
+<input class="form-control" id="full-name-f1" type="text">
+
+<div>
+</div>
+<p>
+</p>
+
+
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1">Country</label> <div> </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+<div>
+</div>
+
+<p>
+</p>
+
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="previousnames" role="button">next</a>
+      </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
