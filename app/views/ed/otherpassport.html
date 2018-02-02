@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				Previously reported lost or stolen passports
+	  	  	</h1>
+	  	  
+			<div class="form-group">
+				<h2 class="heading-small">
+				Have you previously reported any other lost or stolen passports?
+?
+	  	  	</h2>
+			  <fieldset>
+				<legend class="visually-hidden">Are you a British citizen?</legend>
+					<div class="multiple-choice">
+					  <input id="radio-1" name="radio-group" value="Yes" aria-controls="passports-yes" data-target="passports-yes" type="radio">
+					  <label for="radio-1">Yes</label>
+					</div>
+					<!--<p class="form-block">or</p>-->
+					<div class="multiple-choice">
+					  <input id="radio-2" name="radio-group" value="No" aria-controls="passports-no" data-target="passports-no" type="radio">
+					  <label for="radio-2">No</label>
+					</div>
+			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><p><a class="button" href="yourdetails.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				Where is your nearest consulate?
+	  	  	</h1>
+	  	  	
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">Where is your nearest consulate?</legend>
+
+				<p>The person needing an emergency travel document may need to attend a consulate in person to complete their application and/or to collect their emergency travel documents.</p>
+						<p> Select your nearest consulate:</p>
+				
+				<div class="multiple-choice">
+				  <input id="radio-1" name="radio-group" data-target="consulate-Madrid" value="consulate-Madrid" type="radio">
+				  <label for="radio-1">British Consulate General Madrid</label>
+				</div>
+
+				<div class="multiple-choice">
+				  <input id="radio-2" name="radio-group" data-target="consulate-Alicante" value="consulate-Alicante" type="radio">
+				  <label for="radio-2">British Consulate Alicante</label>
+				</div>
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-3" name="radio-group" data-target="consulate-Barcelona" value="consulate-Barcelona" type="radio">
+				  <label for="radio-3">British Consulate General Barcelona</label>
+				</div>	
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-4" name="radio-group" data-target="consulate-ibiza" value="consulate-ibiza" type="radio">
+				  <label for="radio-4">British Consulate Ibiza</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-5" name="radio-group" data-target="consulate-laspalmas" value="consulate-laspalmas" type="radio">
+				  <label for="radio-5">British Consulate Las Palmas de Gran Canaria</label>
+				</div>
+		  		  
+		  	    <div class="multiple-choice">
+				  <input id="radio-6" name="radio-group" data-target="consulate-malaga" value="consulate-malaga" type="radio">
+				  <label for="radio-6">British Consulate Malaga</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-7" name="radio-group" data-target="consulate-palma" value="consulate-palma" type="radio">
+				  <label for="radio-7">British Consulate Palma de Mallorca</label>
+				</div>
+		  		  	
+		  	    <div class="multiple-choice" data-target="consulate-Santacruz">
+				  <input id="radio-8" name="radio-group" value="consulate-Santacruz"   type="radio">
+				  <label for="radio-8">British Consulate Santa Cruz de Tenerife</label>
+				</div>
+	  		  
+	  		  	
+
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><p><a class="button" href="tasklist1.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

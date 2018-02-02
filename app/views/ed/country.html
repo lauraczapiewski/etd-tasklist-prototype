@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			
+			<h1 class="heading-large">
+				What country or territory are you in now?
+	  	  	</h1>
+	  	  
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">What country or territory are you in now?</legend>
+			
+				  	<select name="cat" id="cat" class="postform">
+						<option value="-1">Select Country</option>
+						<option class="level-0" value="74">United Kingdom&nbsp;&nbsp;</option>
+						<option class="level-0" value="12">Spain&nbsp;&nbsp;</option>
+						<option class="level-0" value="82">Austria&nbsp;&nbsp;</option>
+						<option class="level-0" value="72">France&nbsp;&nbsp;</option>
+						<option class="level-0" value="14">United States of America&nbsp;&nbsp;</option>
+						<option class="level-0" value="73">Poland&nbsp;&nbsp;</option>
+						<option class="level-0" value="69">Portugal&nbsp;&nbsp;</option>
+						<option class="level-0" value="13">Estonia &amp; tested&nbsp;&nbsp;</option>
+						<option class="level-0" value="1">Switzerland&nbsp;&nbsp;</option>
+						<option class="level-0" value="71">The Netherlands&nbsp;&nbsp;</option>
+					</select>
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><p><a class="button" href="consulate.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

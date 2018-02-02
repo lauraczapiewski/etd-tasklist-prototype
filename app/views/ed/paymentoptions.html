@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				Payment Options
+	  	  	</h1>
+	  	  	
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">Payment options</legend>
+				
+				<p>
+					Before you submit your application, tell us how you will pay.
+				</p>
+				<p>
+
+An emergency travel document costs £100 or the equivalent in local currency.
+</p>
+<p>
+
+Paying online will significantly speed up the application process.
+</p>
+
+</p>
+				<div class="multiple-choice">
+				  <input id="radio-1" name="radio-group" data-target="pay-online" value="pay-online" type="radio">
+				  <label for="radio-1">Online</label>
+				</div>
+
+				<div class="multiple-choice">
+				  <input id="radio-2" name="radio-group" data-target="pay-friend" value="pay-friend" type="radio">
+				  <label for="radio-2">Ask a friend to pay</label>
+				</div>
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-3" name="radio-group" data-target="pay-offline" value="pay-offline" type="radio">
+				  <label for="radio-3">I can't pay online</label>
+				</div>	
+
+		  	  
+		  	
+		  		  
+		  	
+	  		  	
+
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><p><a class="button" href="confirmation" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}

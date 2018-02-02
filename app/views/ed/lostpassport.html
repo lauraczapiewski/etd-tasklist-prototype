@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Passport renewal
+        </h3>
+        <h1 class="heading-small">
+        Have you lodged a full validity passport application with the Passport Office?
+        </h1>
+
+      
+            <div class="form-group">
+        <fieldset>
+        
+        <legend class="visually-hidden">Why do you need an emergency travel document?</legend>
+        
+        <div class="multiple-choice">
+          <input id="radio-1" name="radio-group" data-target="HMPO-yes" value="HMPO-yes" type="radio">
+          <label for="radio-1">Yes</label>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="radio-2" name="radio-group" data-target="HMPO-No" value="HMPO-No" type="radio">
+          <label for="radio-2">No</label>
+        </div>
+
+        
+          </fieldset>
+
+           
+
+
+
+          <h1 class="heading-small">
+        What's your passport application reference number from the Passport Office?
+      </h1>
+     
+ 
+
+
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1"></label> <div> </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+<div>
+</div>
+</form>
+
+<p>
+</p>
+
+<h1 class="heading-small">
+        Date 
+</h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">When did you submit your passport application?
+</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 24 7 2016 </p>      
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+        </fieldset>
+
+
+        <a class="button button-start" href="otherpassport" role="button">next</a>
+
+</p>
+      </p>
+       
+
+
+
+
+
+    
+</main>
+            
+
+{% endblock %}

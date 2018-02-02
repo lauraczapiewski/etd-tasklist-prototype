@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Forms
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+
+  <form action="/docs/tutorials-and-examples" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Is there any other information you can give?
+    </h1>
+
+    <!-- Full name -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name"></label>
+      <p class="form-hint">(optional)</p>
+      <input type="textarea" class="form-control" id="full-name">
+    </div>
+
+   
+  
+
+    <div class="form-group">
+       <a class="button button-start" href="paymentoptions">next</a>
+    </div>
+
+  </form>
+
+</main>
+{% endblock %}

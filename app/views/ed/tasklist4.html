@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <h1 class="heading-large">
+        Tasks to complete
+      </h1>
+
+      <p>
+        To get your emergency travel document you must complete the steps below.  We cannot start to process your application until all steps have been completed. </p>
+        <p>
+
+        You will be able to return to your application at any point within the next 5 days to add your photo and supporting document, however will not be able to change any other parts of the application.</p>
+
+      <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span> Provide application details
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" aria-describedby="application">
+                Confirm eligibility
+              </a>
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+              
+ <li class="task-list-item">
+              <a class="task-name"  aria-describedby="application">
+                Application details
+              </a>
+               <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+
+            
+          </ul>
+        </li>
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Add photo
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" aria-describedby="photo">
+                Add photo
+              </a>
+
+              <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+
+              
+            </li>
+
+
+            
+
+             
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span> Add supporting documents
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" aria-describedby="photo">
+                Add copy of travel tickets
+              </a>
+                                         <strong class="task-completed" id="read-declaration-completed">Completed</strong>
+
+
+              
+            </li>
+          </ul>
+
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">3. </span> Complete application and collect emergency travel document
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name"  aria-describedby="consent">
+                Find out where and when to collect your emergency travel document
+              </a>
+         <strong> <a class="button" href="collect.html" role="button" id="start application">Start </a></strong>
+         
+
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

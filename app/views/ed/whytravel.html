@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				Why do you need to travel?
+	  	  	</h1>
+	  	  	<hr>
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">Why do you need to travel</legend>
+				
+				<div class="multiple-choice">
+				  <input id="radio-1" name="radio-group" data-target="Why-home" value="why-home" type="radio">
+				  <label for="radio-1">To return home</label>
+				</div>
+
+				<div class="multiple-choice">
+				  <input id="radio-2" name="radio-group" data-target="why-business" value="why-business" type="radio">
+				  <label for="radio-2">For business purposes</label>
+				</div>
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-3" name="radio-group" data-target="why-compassion" value="why-compassion" type="radio">
+				  <label for="radio-3">Compassionate reasons</label>
+				</div>	
+
+		  	    <div class="multiple-choice">
+				  <input id="radio-4" name="radio-group" data-target="why-holiday" value="why-holiday" type="radio">
+				  <label for="radio-4">Going on holiday</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-5" name="radio-group" data-target="why-friend" value="why-friend" type="radio">
+				  <label for="radio-5">Visiting friends or family</label>
+				</div>
+		  		  
+		  	    <div class="multiple-choice">
+				  <input id="radio-6" name="radio-group" data-target="why-passport" value="why-passport" type="radio">
+				  <label for="radio-6">To apply for a new passport</label>
+				</div>
+	  	    	
+		  	    <div class="multiple-choice">
+				  <input id="radio-7" name="radio-group" data-target="why-other" value="why-other" type="radio">
+				  <label for="radio-7">Other</label>
+				</div>
+		  		  
+	  		  	
+
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><hr><p><a class="button" href="passport" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}
